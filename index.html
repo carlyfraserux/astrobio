@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astrobio | Exploring Life Beyond Earth</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+  <!-- Bootstrap 5.3.x CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- =====================
+        NAVIGATION
+  ====================== -->
+<nav class="navbar">
+  <div class="container justify-content-center">
+    <img
+      class="logo mx-auto d-block"
+      src="media/logo.png"
+      alt="Astrobio logo"
+      width="120"
+    />
+  </div>
+</nav>
+
+<!-- =====================
+        HERO SECTION
+  ====================== -->
+<header class="hero-section d-flex align-items-center">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+
+        <h1 class="hero-title">
+          Join Astrobio <br> in the Search for Life
+        </h1>
+
+        <p class="hero-subtitle hero-text-narrow">
+          Astrobio explores habitable planets around stable stars, combining 
+          stellar science and planetary research to uncover where life may emerge.
+        </p>
+
+        <div class="hero-actions justify-content-center">
+          <button
+            type="button"
+            class="btn btn-orange"
+            data-bs-toggle="modal"
+            data-bs-target="#newsletterModal">
+            Sign Up
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-orange"
+            data-bs-toggle="modal"
+            data-bs-target="#donateModal">
+            Donate
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- =====================
+        WHAT WE DO 
+  ====================== -->
+  <section class="what-we-do">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <h2 class="fw-semibold">What We Do</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Exoplanet Research -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-globe2 fs-1 mb-3 icon-accent"></i>
+            <h5 class="card-title">Exoplanet Research</h5>
+            <p class="card-text">
+              Our research focuses on terrestrial and super earth planets
+              beyond our solar system. We evaluate their structure,
+              atmospheres, and orbital conditions, identifying environments that may
+              support biological activity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stellar Habitability -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-sun fs-1 mb-3 icon-accent"></i>
+            <h5 class="card-title">Stellar Habitability</h5>
+            <p class="card-text">
+             Our research focuses on G-type and K-type stars, analyzing their lifespans, energy output, 
+             and stellar behavior to better understand their potential to support habitable planetary systems over time.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Biosignature Detection -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-activity fs-1 mb-3 icon-accent"></i>
+            <h5 class="card-title">Biosignature Detection</h5>
+            <p class="card-text">
+           We investigate chemical and atmospheric markers that may indicate biological processes on distant worlds, 
+           analyzing planetary atmospheres and surface signatures for signs of active or historical life.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- =====================
+      WHY SECTION 1
+  ====================== -->
+<section class="why-section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+
+      <!-- Text -->
+      <div class="col-lg-7 col-md-10 mb-4 mb-lg-0">
+        <h2 class="fw-semibold">Why G & K Star Systems?</h2>
+        <p class="mt-3 text-narrow">
+          G-type and K-type stars offer stable lifespans and consistent energy output, making them prime candidates for hosting habitable planets.
+          Compared to hotter, shorter-lived stars or volatile red dwarfs, these stars provide environments where life has time to emerge and evolve.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="col-lg-5 col-md-10 d-flex justify-content-center justify-content-lg-end">
+        <div class="visual">
+          <img
+            src="media/star-system.jpg"
+            alt="Habitable zone around G-type and K-type stars"
+          >
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================
+   NEWSLETTER SIGN UP MODAL
+  ====================== -->
+<div
+  class="modal fade"
+  id="newsletterModal"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content newsletter-modal">
+      <div class="modal-header">
+        <h5 class="modal-title">Astrobiology Research Updates</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <p class="mb-3">
+          Subscribe for updates on exoplanet discoveries, habitable star systems,
+          and ongoing astrobiology research.
+        </p>
+
+        <form>
+          <div class="mb-3">
+            <label for="signupEmail" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="signupEmail"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-orange">
+            Subscribe
+          </button>
+        </form>
+
+        <p class="small text-muted mt-3 mb-0">
+          No spam. Research updates only.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =====================
+        DONATE MODAL
+  ====================== -->
+<div class="modal fade" id="donateModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content donate-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Support Astrobio Research</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p class="mb-4">
+          Your support helps fund research into habitable star systems,
+          exoplanet atmospheres, and biosignature detection.
+        </p>
+
+        <form>
+          <!-- Donation Amount -->
+          <div class="mb-3">
+            <label class="form-label">Donation Amount (USD)</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="25"
+              min="1"
+              required
+            />
+          </div>
+
+          <!-- Cardholder Name -->
+          <div class="mb-3">
+            <label class="form-label">Cardholder Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Jane Doe"
+              required
+            />
+          </div>
+
+          <!-- Card Number -->
+          <div class="mb-3">
+            <label class="form-label">Card Number</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="1234 5678 9012 3456"
+              maxlength="19"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <!-- Expiration -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Expiration</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="MM / YY"
+                maxlength="5"
+                required
+              />
+            </div>
+
+            <!-- CVC -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">CVC</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="123"
+                maxlength="4"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Email (optional) -->
+          <div class="mb-4">
+            <label class="form-label">Email (optional)</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="you@example.com"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-orange">
+            Donate
+          </button>
+        </form>
+
+        <p class="small text-muted mt-3 mb-0">
+          This is a demonstration interface for a portfolio project.
+          No real payments are processed.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =====================
+      STELLAR CLASSIFICATION
+  ====================== -->
+  <section class="stellar-classification">
+    <div class="container text-center">
+      <h2 class="mb-4">Stellar Classification & Habitability</h2>
+     <div class="stellar-intro">
+  <p>
+    This classification illustrates the major stellar types. By comparing these
+    categories, we can better understand why G-type and K-type stars occupy a unique
+    middle ground: long-lived enough to support biological evolution, yet stable
+    enough to avoid extreme stellar activity.
+  </p>
+
+
+</div>
+
+      <!-- Diagram -->
+      <div class="stellar-diagram">
+        <button class="star-btn star-o" data-star="O">O</button>
+        <button class="star-btn star-b" data-star="B">B</button>
+        <button class="star-btn star-a" data-star="A">A</button>
+        <button class="star-btn star-f" data-star="F">F</button>
+        <button class="star-btn star-g highlight" data-star="G">G</button>
+        <button class="star-btn star-k highlight" data-star="K">K</button>
+        <button class="star-btn star-m" data-star="M">M</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="starModal"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p id="modalDescription"></p>
+
+          <ul class="list-unstyled">
+            <li><u>Temperature:</u> <span id="modalTemp"></span></li>
+            <li><u>Lifespan:</u><span id="modalLife"></span></li>
+            <li><u>Habitability:</u> <span id="modalHabit"></span></li>
+          </ul>
+
+          <p class="mt-3" id="modalNote"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- =====================
+        WHY SECTION 2
+  ====================== -->
+  <section class="why-section">
+  <div class="container">
+    <div class="row">
+
+      <!-- Text -->
+      <div class="col-lg-7">
+        <h2 class="fw-semibold">Why Terrestrial & Super Earth Exoplanets?</h2>
+        <p class="mt-3 text-narrow">
+         Rocky terrestrial planets and larger Super-Earths offer solid surfaces and potential atmospheres, creating conditions favorable for liquid water and long-term stability. 
+         These characteristics make them compelling targets in the search for life beyond our solar system.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="col-lg-5 d-flex justify-content-end">
+        <div class="visual">
+          <img
+            src="media/super-earth.jpg"
+            alt="Habitable zone around G-type and K-type stars"
+          >
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================
+      PLANET CLASSIFICATION
+  ====================== --> 
+
+<section class="exoplanet-classification">
+  <div class="container text-center">
+    <h2 class="mb-4">Exoplanet Types & Habitability</h2>
+    <div class="exoplanet-intro">
+      <p>
+        Exoplanets vary in size, composition, and distance from their star. Some may be rocky and potentially habitable, 
+        while others are massive gas or ice giants, or even rogue planets without a host star. Click on a planet type to explore details.
+      </p>
+    </div>
+
+    <div class="exoplanet-diagram">
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="planetModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="planetModalTitle"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mt-0" id="planetModalNote"></p>
+
+        <!-- Planet stats -->
+        <ul class="list-unstyled">
+          <li><u>Radius:</u> <span id="planetModalRadius"></span></li>
+          <li><u>Mass:</u> <span id="planetModalMass"></span></li>
+          <li><u>Atmosphere:</u> <span id="planetModalAtmosphere"></span></li>
+          <li><u>Orbital Distance:</u> <span id="planetModalOrbit"></span></li>
+          <li><u>Habitability:</u> <span id="planetModalHabit"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- =====================
+        FOOTER
+  ====================== -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="mb-1">© Website by Carly Fraser</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.x JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+    <!-- Custom JS -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
